@@ -1,0 +1,111 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+  --ff-body:'Roboto', sans-serif;
+
+  --text-color:#323238;
+
+  --bg-body:#fff;
+  
+  --bg-card:#E1E1E6;
+  --bg-hover:#02799D;
+
+}
+
+body{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 19.2rem;
+}
+
+#timer .time span{
+  font-family: var(--ff-body);
+  font-weight: 500;
+  font-size: clamp(4rem, 4rem + 10vw, 12.6rem);
+  line-height: 14.8rem;
+ 
+  color: var(--text-color);
+}
+
+.buttons{
+  display: flex;
+  gap: 4rem;
+}
+
+.buttons button {
+  background-color: transparent;
+  border: none;
+  
+  cursor: pointer;
+
+  width:clamp(1rem, 1rem + 4vw, 4.8rem);
+}
+
+#sounds-buttons{
+  display: grid;
+  grid-template-areas: "a b"
+                       "c d";
+ gap: 3.2rem;
+  
+}
+
+#sounds-buttons .pattern-card{
+  background-color: var(--bg-card);
+
+  width: 13.8rem;
+  height: 15.2rem;
+
+  border-radius: 2.4rem;
+}
+
+#sounds-buttons .pattern-card{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#sounds-buttons .pattern-card:hover{
+  background-color: var(--bg-hover);
+   
+  cursor: pointer;
+}
+
+#sounds-buttons .forest-card{
+  grid-area: a;
+}
+
+#sounds-buttons .rain-card{
+  grid-area: b;
+}
+
+#sounds-buttons .coffeeTable-card{
+  grid-area: c;
+}
+
+#sounds-buttons .firePlace-card{
+  grid-area: d;
+}
+
+@media (max-width: 850px){
+  main{
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+  }
+
+}
+
+
+
