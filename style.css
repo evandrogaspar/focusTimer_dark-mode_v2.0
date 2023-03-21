@@ -21,6 +21,8 @@ body{
   display: grid;
   place-items: center;
   height: 100vh;
+
+  position: relative;
 }
 
 main{
@@ -28,6 +30,11 @@ main{
   align-items: center;
   justify-content: center;
   gap: 19.2rem;
+
+}
+
+.hide{
+  display: none;
 }
 
 #timer .time span{
@@ -62,18 +69,18 @@ main{
 }
 
 #sounds-buttons .pattern-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+
   background-color: var(--bg-card);
 
   width: 13.8rem;
   height: 15.2rem;
 
   border-radius: 2.4rem;
-}
-
-#sounds-buttons .pattern-card{
-display: flex;
-align-items: center;
-justify-content: center;
 }
 
 #sounds-buttons .pattern-card:hover{
@@ -97,6 +104,20 @@ justify-content: center;
 #sounds-buttons .firePlace-card{
   grid-area: d;
 }
+
+.light-dark-mode{
+  position: absolute;
+  top: 6rem;
+  right: 6rem;
+
+  cursor: pointer;
+}
+
+.progress{
+  width: 9rem;
+  height: 1.6rem;
+}
+
 
 @media (max-width: 850px){
   main{
