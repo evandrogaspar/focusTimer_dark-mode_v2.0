@@ -1,5 +1,4 @@
 import { Timer } from "./timer.js"
-import { Events } from "./events.js"
 import { Sound } from "./sounds.js"
 import { DarkMode } from "./darkMode.js"
 
@@ -22,16 +21,17 @@ import {
   rainPath,
   coffeeTablePath,
   firePlacePath,
+  inputForest,
+  inputRain,
+  inputCoffeeTable,
+  inputFirePlace,
+  
 } from "./elements.js"
 
 
 const timer = Timer({
   minutesDisplay,
   secondsDisplay,
-})
-
-const events = Events({
-  minutesDisplay,
 })
 
 const sound = Sound()
@@ -51,8 +51,12 @@ DarkMode({
   rainCard,
   coffeeTableCard,
   firePlaceCard,
-})
+  inputForest,
+  inputRain,
+  inputCoffeeTable,
+  inputFirePlace,
 
+})
 
 buttonPlay.addEventListener("click", function (){
   timer.countdown()
@@ -63,14 +67,14 @@ buttonStop.addEventListener("click", function(){
 })
 
 buttonIncrementMinutes.addEventListener("click", function(){
-  events.incrementMinutes()
+  timer.incrementMinutes()
 })
 
 buttonDecrementMinutes.addEventListener("click", function(){
-  events.decrementMinutes()
+  timer.decrementMinutes()
 })
 
-
+//sound events
 forestCard.addEventListener("mouseover", function(){
   sound.forestSound.play()
 })

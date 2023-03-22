@@ -98,9 +98,6 @@ main{
 
 
 #sounds-buttons .pattern-card:hover{
-  background-color: var(--bg-hover);
-  accent-color: white;
-  
   cursor: pointer;
 }
 

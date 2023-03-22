@@ -16,6 +16,13 @@ const forestPath = document.querySelector(".forest-path")
 const rainPath = document.querySelector(".rain-path")
 const coffeeTablePath = document.querySelector(".coffeeTable-path")
 const firePlacePath = document.querySelector(".firePlace-path")
+const inputForest = document.querySelector(".input-forest")
+const inputRain = document.querySelector(".input-rain")
+const inputCoffeeTable = document.querySelector(".input-coffeeTable")
+const inputFirePlace = document.querySelector(".input-firePlace")
+
+
+
 
 export {
   minutesDisplay,
@@ -36,4 +43,10 @@ export {
   rainPath,
   coffeeTablePath,
   firePlacePath,
+  inputForest,
+  inputRain,
+  inputCoffeeTable,
+  inputFirePlace,
+ 
+
 }
