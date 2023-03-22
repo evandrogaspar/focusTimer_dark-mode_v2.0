@@ -8,7 +8,7 @@
   font-size: 62.5%;
   --ff-body:'Roboto', sans-serif;
 
-  --text-color:#323238;
+  --pattern-color:#323238;
 
   --bg-body:#fff;
   
@@ -43,7 +43,7 @@ main{
   font-size: clamp(4rem, 4rem + 10vw, 12.6rem);
   line-height: 14.8rem;
  
-  color: var(--text-color);
+  color: var(--pattern-color);
 }
 
 .buttons{
@@ -83,11 +83,27 @@ main{
   border-radius: 2.4rem;
 }
 
+.progress{
+  appearance: none;
+  accent-color: var(--pattern-color);
+  
+  width: 9rem;
+  height:.5rem;
+  
+  background: var(--pattern-color);
+  outline: none;
+
+  border-radius: 1.5rem;
+}
+
+
 #sounds-buttons .pattern-card:hover{
   background-color: var(--bg-hover);
-   
+  accent-color: white;
+  
   cursor: pointer;
 }
+
 
 #sounds-buttons .forest-card{
   grid-area: a;
@@ -111,11 +127,6 @@ main{
   right: 6rem;
 
   cursor: pointer;
-}
-
-.progress{
-  width: 9rem;
-  height: 1.6rem;
 }
 
 
