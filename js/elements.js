@@ -47,6 +47,4 @@ export {
   inputRain,
   inputCoffeeTable,
   inputFirePlace,
- 
-
 }

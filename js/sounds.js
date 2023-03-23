@@ -9,7 +9,7 @@ export function Sound(){
   rainSound.loop = true
   coffeeTableSound.loop = true
   firePlaceSound.loop = true
-  
+
   return {
     forestSound,
     rainSound,

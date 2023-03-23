@@ -1,6 +1,7 @@
 import { Timer } from "./timer.js"
-import { Sound } from "./sounds.js"
 import { DarkMode } from "./darkMode.js"
+import { Controls } from "./controls.js"
+
 
 import {
   minutesDisplay,
@@ -34,7 +35,20 @@ const timer = Timer({
   secondsDisplay,
 })
 
-const sound = Sound()
+const controls = Controls({
+  forestCard,
+  rainCard,
+  coffeeTableCard,
+  firePlaceCard,
+  forestPath,
+  rainPath,
+  coffeeTablePath,
+  firePlacePath,
+  inputForest,
+  inputRain,
+  inputCoffeeTable,
+  inputFirePlace,
+})
 
 DarkMode({
   minutesDisplay,
@@ -51,12 +65,9 @@ DarkMode({
   rainCard,
   coffeeTableCard,
   firePlaceCard,
-  inputForest,
-  inputRain,
-  inputCoffeeTable,
-  inputFirePlace,
-
 })
+
+
 
 buttonPlay.addEventListener("click", function (){
   timer.countdown()
@@ -75,36 +86,22 @@ buttonDecrementMinutes.addEventListener("click", function(){
 })
 
 //sound events
-forestCard.addEventListener("mouseover", function(){
-  sound.forestSound.play()
+
+forestCard.addEventListener("click", function(){
+  controls.forestCardControl()
 })
 
-forestCard.addEventListener("mouseout", function(){
-  sound.forestSound.pause()
+rainCard.addEventListener("click", function(){
+ controls.rainCardControl()
 })
 
-rainCard.addEventListener("mouseover", function(){
-  sound.rainSound.play()
+coffeeTableCard.addEventListener("click", function(){
+  controls.coffeeTableCardControl()
 })
 
-rainCard.addEventListener("mouseout", function(){
-  sound.rainSound.pause()
+firePlaceCard.addEventListener("click", function(){
+  controls.firePlaceCardControl()
 })
 
-coffeeTableCard.addEventListener("mouseover", function(){
-  sound.coffeeTableSound.play()
-})
-
-coffeeTableCard.addEventListener("mouseout", function(){
-  sound.coffeeTableSound.pause()
-})
-
-firePlaceCard.addEventListener("mouseover", function(){
-  sound.firePlaceSound.play()
-})
-
-firePlaceCard.addEventListener("mouseout", function(){
-  sound.firePlaceSound.pause()
-})
 
 
