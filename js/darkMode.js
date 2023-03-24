@@ -6,14 +6,6 @@ export function DarkMode({
   btnStopPath,
   btnPlusPath,
   btnMinusPath,
-  forestPath,
-  rainPath,
-  coffeeTablePath,
-  firePlacePath,
-  forestCard,
-  rainCard,
-  coffeeTableCard,
-  firePlaceCard,
 }){
 
 const separationMinutesSeconds = document.querySelector(".separation-minutes-seconds")
@@ -37,16 +29,6 @@ lightIcon.addEventListener("click", function(){
   btnPlusPath.style.fill = "#C4C4CC"
   btnMinusPath.style.fill = "#C4C4CC"
   
-  forestPath.style.fill = "##323238"
-  rainPath.style.fill = "#323238"
-  coffeeTablePath.style.fill ="##323238"
-  firePlacePath.style.fill ="##323238"
-
-  forestCard.style.backgroundColor = "#E1E1E6"
-  rainCard.style.backgroundColor = "#E1E1E6"
-  coffeeTableCard.style.backgroundColor = "#E1E1E6"
-  firePlaceCard.style.backgroundColor = "#E1E1E6"
-
   document.body.style.backgroundColor = "#121214"
 })
 
@@ -61,16 +43,6 @@ darkIcon.addEventListener("click", function(){
   btnPlusPath.style.fill = "#323238"
   btnMinusPath.style.fill = "#323238"
   
-  forestPath.style.fill = "#323238"
-  rainPath.style.fill = "#323238"
-  coffeeTablePath.style.fill ="#323238"
-  firePlacePath.style.fill ="#323238"
-
-  forestCard.style.backgroundColor = "#E1E1E6"
-  rainCard.style.backgroundColor = "#E1E1E6"
-  coffeeTableCard.style.backgroundColor = "#E1E1E6"
-  firePlaceCard.style.backgroundColor = "#E1E1E6"
-
   document.body.style.backgroundColor = "#FFF"
 })
 

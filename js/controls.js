@@ -1,4 +1,10 @@
 import { Sound } from "./sounds.js"
+import {
+  forestVol,
+  rainVol,
+  coffeeTableVol,
+  firePlaceVol,
+} from "./elements.js"
 
 const sound = Sound()
 
@@ -90,12 +96,32 @@ export function Controls({
      sound.firePlaceSound.pause()
     }
   }
+
+  function forestVolume(){
+    sound.forestSound.volume = forestVol.value
+  }
+
+  function rainVolume(){
+    sound.rainSound.volume = rainVol.value
+  }
+
+  function coffeeTableVolume(){
+    sound.coffeeTableSound.volume = coffeeTableVol.value
+  }
+
+  function firePlaceVolume(){
+    sound.firePlaceSound.volume = firePlaceVol.value
+  }
  
   return {
     forestCardControl,
     rainCardControl,
     coffeeTableCardControl,
     firePlaceCardControl,
+    forestVolume,
+    rainVolume,
+    coffeeTableVolume,
+    firePlaceVolume,
   }
 
   

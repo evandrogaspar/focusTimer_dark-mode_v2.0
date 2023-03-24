@@ -26,6 +26,11 @@ import {
   inputRain,
   inputCoffeeTable,
   inputFirePlace,
+  forestVol,
+  rainVol,
+  coffeeTableVol,
+  firePlaceVol,
+  
   
 } from "./elements.js"
 
@@ -57,14 +62,6 @@ DarkMode({
   btnStopPath,
   btnPlusPath,
   btnMinusPath,
-  forestPath,
-  rainPath,
-  coffeeTablePath,
-  firePlacePath,
-  forestCard,
-  rainCard,
-  coffeeTableCard,
-  firePlaceCard,
 })
 
 
@@ -101,6 +98,23 @@ coffeeTableCard.addEventListener("click", function(){
 
 firePlaceCard.addEventListener("click", function(){
   controls.firePlaceCardControl()
+})
+
+//volume events
+forestVol.addEventListener("change", function(){
+  controls.forestVolume()
+})
+
+rainVol.addEventListener("change", function(){
+  controls.rainVolume()
+})
+
+coffeeTableVol.addEventListener("change", function(){
+  controls.coffeeTableVolume()
+})
+
+firePlaceVol.addEventListener("change", function(){
+  controls.firePlaceVolume()
 })
 
 

@@ -20,6 +20,10 @@ const inputForest = document.querySelector(".input-forest")
 const inputRain = document.querySelector(".input-rain")
 const inputCoffeeTable = document.querySelector(".input-coffeeTable")
 const inputFirePlace = document.querySelector(".input-firePlace")
+const forestVol = document.querySelector("#volume-control-forest")
+const rainVol = document.querySelector("#volume-control-rain")
+const coffeeTableVol = document.querySelector("#volume-control-coffeeTable")
+const firePlaceVol = document.querySelector("#volume-control-firePlace")
 
 
 
@@ -47,4 +51,8 @@ export {
   inputRain,
   inputCoffeeTable,
   inputFirePlace,
+  forestVol,
+  rainVol,
+  coffeeTableVol,
+  firePlaceVol,
 }
