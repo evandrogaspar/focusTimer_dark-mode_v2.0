@@ -8,7 +8,6 @@ import {
 
 const sound = Sound()
 
-
 export function Controls({
   forestCard,
   rainCard,
@@ -76,6 +75,7 @@ export function Controls({
     inputCoffeeTable.style.backgroundColor="#323238"
     inputCoffeeTable.style.accentColor="#323238"
     sound.coffeeTableSound.pause()
+    
   }
   }
   
@@ -94,6 +94,7 @@ export function Controls({
      inputFirePlace.style.backgroundColor="#323238"
      inputFirePlace.style.accentColor="#323238"
      sound.firePlaceSound.pause()
+   
     }
   }
 

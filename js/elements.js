@@ -25,9 +25,6 @@ const rainVol = document.querySelector("#volume-control-rain")
 const coffeeTableVol = document.querySelector("#volume-control-coffeeTable")
 const firePlaceVol = document.querySelector("#volume-control-firePlace")
 
-
-
-
 export {
   minutesDisplay,
   secondsDisplay,

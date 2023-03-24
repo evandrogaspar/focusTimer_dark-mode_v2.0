@@ -37,6 +37,7 @@ main{
   display: none;
 }
 
+
 #timer .time span{
   font-family: var(--ff-body);
   font-weight: 500;
@@ -116,6 +117,13 @@ main{
 
 #sounds-buttons .firePlace-card{
   grid-area: d;
+}
+
+.forest-card,
+.rain-card,
+.coffeeTable-card,
+.firePlace-card{
+  box-shadow: 2px 2px 5px black;
 }
 
 .light-dark-mode{

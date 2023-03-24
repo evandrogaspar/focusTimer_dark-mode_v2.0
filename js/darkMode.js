@@ -24,6 +24,7 @@ lightIcon.addEventListener("click", function(){
   minutesDisplay.style.color ="#FFF"
   separationMinutesSeconds.style.color ="#FFF"
   secondsDisplay.style.color ="#FFF"
+  
   btnPlayPath.style.fill = "#C4C4CC"
   btnStopPath.style.fill = "#C4C4CC"
   btnPlusPath.style.fill = "#C4C4CC"
